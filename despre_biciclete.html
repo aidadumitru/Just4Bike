@@ -1,0 +1,257 @@
+<HTML>
+	<head>
+		<title>J4B-Desp.Biciclete</title>
+		<link rel="shortcut icon" href="img/favicon1.ico" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap.4.5.0/js/bootstrap/min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link REL="STYLESHEET" TYPE="text/css" HREF="css/styles2.css">
+		<link REL="STYLESHEET" TYPE="text/css" HREF="css/style_paginatie.css">
+		<link REL="STYLESHEET" TYPE="text/css" HREF="css/post.css">
+		<link REL="STYLESHEET" TYPE="text/css" HREF="css/modal_img.css">
+		
+		<meta charset="UTF-8">
+		<meta name="description" content="Website unde se găsesc informații despre biciclete, role dar și trotinete de toate vârstele.">
+		<meta name="keywords" content="Role,Biciclete,Trotinete,Reglaj biciclete, Dimensiuni roti role, Greutati acceptate trotinete">
+		<meta name="author" content="Dumitru Aida-Felicia">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body>
+		<ul class="nav nav-tabs justify-content-center" >
+		<div class="post-container">                
+		<div class="post-title"><img src="img/logo.png"alt="just4bike" style="width:430px;height:280px;"style="vertical-align:middle;margin:0px 50px"/></div>
+		<div class="post-title"><img src="img/bikeland.jpg"style="width:860px;height:225px;</div>
+		<div class="post-title">
+		
+			<ul class="nav nav-tabs justify-content-center" >
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <nav class="navbar navbar-light bg-light">
+		  <a class="navbar-brand">
+			<img src="img/tlogo.png" width="60" height="60" alt="" loading="lazy">
+		  </a>
+		</nav>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html">Acasă</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="informatii.html">Informații</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Biciclete
+				</a>
+				<div class="dropdown-menu " aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item " href="biciclete_copii.html">Copii</a>
+				  <a class="dropdown-item" href="biciclete_adulti.html">Adulți</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item active" href="despre_biciclete.html">Despre <span class="sr-only">(current)</span></a>
+				</div>
+			  </li>
+					<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Role
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="role_copii.html">Copii</a>
+				  <a class="dropdown-item" href="role_adulti.html">Adulți</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item" href="despre_role.html">Despre</a>
+				</div>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="trotinete.html">Trotinete <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Magazin</a>
+			  </li>
+					<li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+					</ul></ul>
+		
+		<div class="container">
+				
+			<button onclick="topFunction()" id="myBtn" title="Mergi în susul paginii">Sus</button>
+			<script>
+					var mybutton = document.getElementById("myBtn");
+
+					window.onscroll = function() {scrollFunction()};
+
+					function scrollFunction() {
+					  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						mybutton.style.display = "block";
+					  } else {
+						mybutton.style.display = "none";
+					  }
+					}
+
+					function topFunction() {
+					  document.body.scrollTop = 0;
+					  document.documentElement.scrollTop = 0;
+					}
+				</script>
+				<script>
+					function openModal() {
+					  document.getElementById("myModal").style.display = "block";
+					}
+
+					function closeModal() {
+					  document.getElementById("myModal").style.display = "none";
+					}
+
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+					  var i;
+					  var slides = document.getElementsByClassName("mySlides");
+					  var dots = document.getElementsByClassName("demo");
+					  var captionText = document.getElementById("caption");
+					  if (n > slides.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+						  slides[i].style.display = "none";
+					  }
+					  for (i = 0; i < dots.length; i++) {
+						  dots[i].className = dots[i].className.replace(" active", "");
+					  }
+					  slides[slideIndex-1].style.display = "block";
+					  dots[slideIndex-1].className += " active";
+					  captionText.innerHTML = dots[slideIndex-1].alt;
+					}
+				</script>
+			
+			<div class="row">
+					<h2>Obține o bicicletă potrivită la dimensiuni</h2>
+					<div><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;După ce ai ales categoria ta de biciclete potrivită scopului tău, următorul pas crucial este să te asiguri că obții dimensiunea potrivită pentru biciclete pentru tine. 
+					Nu dorești să suferi de dureri de spate sau de genunchi după mersul cu bicicleta, sau chiar să nu poți să o urci sau să o cobori! Așadar, pentru a vă potrivi corect,
+					trebuie să iei în considerare câteva dintre următoarele.
+					– Primul element pe care trebuie să îl verifici cu atenție înainte de a lua bicicleta acasă este ÎNĂLȚIMEA ȘEII. Întrucât un număr semnificativ de biciclisti au suferit dureri
+					în fața genunchilor, este posibil ca șaua lor să fie prea jos poziționată, încât îi determină să se extindă în timp ce pedalează.
+					– Al doilea element care merită să fie verificat minuțios este LUNGIMEA CADRULUI (REACH). Mă refer la distanța pe orizontală dintre centrul butucului pedalier și tubul frontal 
+					de unde pleacă pipa. Lungimea corectă înseamnă că obții un unghi de 45 de grade între orizontală și linia ce pleacă de la tors prin brațe și coboară spre ghidon. Ceea ce e ok.</h3>
+					<h3>Mai jos se găsesc câteva tipuri de biciclete.</h3>
+
+					<div class="row">
+					  <div class="column">
+						<img src="img/pegas.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					  </div>
+					  <div class="column">
+						<img src="img/mtb.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					  </div>
+					  <div class="column">
+						<img src="img/fb.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					  </div>
+					  <div class="column">
+						<img src="img/cursiera.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+					  </div>
+					</div>
+
+					<div id="myModal" class="modal">
+					  <span class="close cursor" onclick="closeModal()">&times;</span>
+					  <div class="modal-content">
+
+						<div class="mySlides">
+						  <div class="numbertext">1 / 4</div>
+						  <img src="img/pegas.jpg" style="width:100%"title="Templul Dianei din EFES">
+						</div>
+
+						<div class="mySlides">
+						  <div class="numbertext">2 / 4</div>
+						  <img src="img/mtb.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+						  <div class="numbertext">3 / 4</div>
+						  <img src="img/fb.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides">
+						  <div class="numbertext">4 / 4</div>
+						  <img src="img/cursiera.jpg" style="width:100%">
+						</div>
+						
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<div class="caption-container">
+						  <p id="caption"></p>
+						</div>
+
+
+						<div class="column">
+						  <img class="demo cursor" src="img/pegas.jpg" style="width:100%" onclick="currentSlide(1)" alt="Pegas">
+						</div>
+						<div class="column">
+						  <img class="demo cursor" src="img/mtb.jpg" style="width:100%" onclick="currentSlide(2)" alt="Mountain Bike">
+						</div>
+						<div class="column">
+						  <img class="demo cursor" src="img/fb.jpg" style="width:100%" onclick="currentSlide(3)" alt="Fat Bike">
+						</div>
+						<div class="column">
+						  <img class="demo cursor" src="img/cursiera.jpg" style="width:100%" onclick="currentSlide(4)" alt="Racing Bike">
+						</div>
+					  </div>
+					</div>
+									</div>
+									<H3><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trebuie să avem grijă! Există, conform dimensiunilor, atât biciclete pentru copii cât și pentru adulți!  
+									</H3>
+									<div class="row">
+										<div class="col-sm-4">
+										<h2>Biciclete pentru copii</h2>
+										<A href="biciclete_copii.html"><img src="img/kidbike.jpg" alt="bicicleta copii"  width="100%" height="300"></A>
+									</div>
+										<div class="col-sm-4">
+										<h2>Biciclete intermediare</h2>
+									<A href="biciclete_copii.html"><img src="img/intermedBike.jpg" alt="bicicleta adulti"width="100%" height="300"></A>
+									</div>
+										<div class="col-sm-4">
+										<h2>Biciclete pentru adulți</h2>
+									<A href="biciclete_adulti.html"><img src="img/manbike.jpg" alt="bicicleta adulti"width="100%" height="300"></A>
+									</div>
+								</div>
+							</div>
+	</body>
+	<footer>	
+		<div class="center">
+			<div class="pagination">
+			  <a href="informatii.html">&laquo;</a>
+			  <a href="index.html">1</a>
+			  <a href="informatii.html">2</a>
+			  <a href="despre_biciclete.html" class="active">3</a>
+			  <a href="despre_role.html">4</a>
+			  <a href="trotinete.html">5</a>
+			  <a href="contact.html">6</a>
+			  <a href="despre_role.html">&raquo;</a>
+			 </div>
+		<div class="left">
+		<p id="date"></p></div>
+		<div class="right">
+		&copy; Copyright 2023 Aida-Felicia Dumitru | FAIMA| Ianuarie 2023</div>
+		
+	</footer>
+		<script>
+		n =  new Date();
+		y = n.getFullYear();
+		m = n.getMonth() + 1;
+		d = n.getDate();
+		document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+		</script>
+<HTML>

@@ -1,0 +1,16 @@
+h1 {color: black; font-family: Arial}
+h2 {color: yellow; font-family: Verdana}
+h3 {color: black; font-family: Arial}
+
+body {
+ background-image: url(../img/b1.jpg);
+ background-color: #cccccc;
+}
+text-justify: auto|inter-word|inter-character|none|initial|inherit;
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
